@@ -8,12 +8,18 @@ The application and configuration are pretty barebones. For example, the applica
 
 To build the image, you'll need to install Docker and Docker Compose. Then:
 
-```docker-compose build```
+```sh
+docker-compose build
+```
 
 After that, you can run the application:
 
-```docker-compose up -d```
+```sh
+docker-compose up -d
+```
 
 And then start using it:
 
-```curl localhost/custom/r-application?x=5```
+```sh
+curl localhost/custom/r-application?x=5
+```
