@@ -3,6 +3,7 @@ library(Rook)
 app <- function(env) {
   
   req <- Request$new(env)
+  
   if ("x" %in% names(req$GET())) {
     x <- as.numeric(req$GET()[["x"]])
     res <- Response$new()
@@ -15,4 +16,5 @@ app <- function(env) {
     res$write("<p>You need to pass in x.</p>")
     res$finish()
   }
+  
 }
